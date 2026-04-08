@@ -6,24 +6,27 @@
 
 body{
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    background-color: white;
     padding: 30px;
 }
 
+.cards-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
 
 .card{
     width: 100%;
     max-width: 250px;
     height: 200px;
-    border: 1px solid #d5d2d2;
+    border: 1px solid lightgray;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 16px;
-    color: rgb(223, 218, 218);
+    color: white;
     position: relative;
     overflow: hidden;
     margin: auto;
@@ -50,7 +53,8 @@ body{
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: black;
+    opacity: 0.4;
 }
 
 
